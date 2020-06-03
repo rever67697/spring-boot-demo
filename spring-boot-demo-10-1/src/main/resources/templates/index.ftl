@@ -6,11 +6,7 @@
 	<link href="/css/index.css" rel="stylesheet" />
 </head>
 <body>
-	<center>
-		<img src="/images/logo.png" />
-		<h1 id="title">${title}</h1>
-	</center>
-	
+    <h1 id="title">${title}</h1>
 	<script type="text/javascript" src="/webjars/jquery/2.1.4/jquery.min.js"></script>
 	
 	<script>

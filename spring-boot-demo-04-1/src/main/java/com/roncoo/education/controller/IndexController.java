@@ -6,10 +6,7 @@ package com.roncoo.education.controller;
 import java.util.Date;
 import java.util.HashMap;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.roncoo.education.bean.User;
 
@@ -29,6 +26,7 @@ public class IndexController {
 
 	// @RequestParam 简单类型的绑定，可以出来get和post
 	@RequestMapping(value = "/get")
+	@ResponseBody
 	public HashMap<String, Object> get(@RequestParam String name) {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("title", "hello world");

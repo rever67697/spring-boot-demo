@@ -39,14 +39,14 @@ public class RoncooUser implements Serializable {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", name=").append(name);
-        sb.append(", createTime=").append(createTime);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
+        sb.append(getClass().getSimpleName())
+        .append(" [").append("Hash = ")
+        .append(hashCode())
+        .append(", id=").append(id)
+        .append(", name=").append(name)
+        .append(", createTime=").append(createTime)
+        .append(", serialVersionUID=").append(serialVersionUID)
+        .append("]");
         return sb.toString();
     }
 }

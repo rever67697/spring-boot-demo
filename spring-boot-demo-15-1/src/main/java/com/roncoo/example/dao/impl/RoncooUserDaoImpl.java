@@ -2,7 +2,6 @@ package com.roncoo.example.dao.impl;
 
 import org.springframework.stereotype.Repository;
 
-import com.mysql.jdbc.StringUtils;
 import com.roncoo.example.bean.RoncooUser;
 import com.roncoo.example.dao.RoncooUserDao;
 import com.roncoo.example.util.base.JdbcDaoImpl;
@@ -66,10 +65,10 @@ public class RoncooUserDaoImpl extends JdbcDaoImpl implements RoncooUserDao {
 		
 		// 若要like查询，如下
 		StringBuffer sql = new StringBuffer("select * from roncoo_user where 1");
-		if(!StringUtils.isNullOrEmpty(name)){
-			// Sql.checkSql 的作用是防止sql注入
-			sql.append(" and name like '%").append(Sql.checkSql(name)).append("%' ");
-		}
+//		if(!StringUtils.isNullOrEmpty(name)){
+//			// Sql.checkSql 的作用是防止sql注入
+//			sql.append(" and name like '%").append(Sql.checkSql(name)).append("%' ");
+//		}
 		return queryForPage(sql.toString(), pageCurrent, pageSize, RoncooUser.class);
 	}	
 

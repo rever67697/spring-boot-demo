@@ -8,6 +8,8 @@ public class RoncooUser implements Serializable {
 
     private String name;
 
+    private String name1;
+
     private Date createTime;
 
     private static final long serialVersionUID = 1L;
@@ -34,6 +36,14 @@ public class RoncooUser implements Serializable {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getName1() {
+        return name1;
+    }
+
+    public void setName1(String name1) {
+        this.name1 = name1;
     }
 
     @Override

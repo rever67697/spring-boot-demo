@@ -11,6 +11,7 @@ public class SpringBootDemo81ApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println(666);
 	}
 
 }

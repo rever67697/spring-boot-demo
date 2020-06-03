@@ -10,12 +10,12 @@
 	
 </head>
 <body>
-	<img src="/static/images/logo.png" alt="logo"/>
+	<%--<img src="/static/images/logo.png" alt="logo"/>--%>
 	<h1 id="title">${title}</h1>
 	
 	<c:url value="http://www.roncoo.com" var="url"/>
 	<spring:url value="http://www.roncoo.com" htmlEscape="true" var="springUrl" />
-	
+	<c:forEach var="a" items="www" step="1" />
 	Spring URL: ${springUrl}
 	<br>
 	JSTL URL: ${url}

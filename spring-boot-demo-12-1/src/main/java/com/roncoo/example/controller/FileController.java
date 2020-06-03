@@ -34,7 +34,7 @@ public class FileController {
 		logger.info("上传的后缀名为：" + suffixName);
 
 		// 文件上传路径
-		String filePath = "d:/roncoo/education/";
+		String filePath = "E:/project/out";
 
 		// 解决中文问题，liunx下中文路径，图片显示问题
 		fileName = UUID.randomUUID() + suffixName;

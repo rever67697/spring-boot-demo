@@ -19,14 +19,14 @@ import javax.servlet.annotation.WebFilter;
 public class CustomFilter implements Filter {
 
 	@Override
-	public void init(FilterConfig filterConfig) throws ServletException {
+	public void init(FilterConfig filterConfig) {
 		System.out.println("init filter");
 	}
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("do filter");
+		System.out.println("do filter1");
 		chain.doFilter(request, response);
 	}
 
